@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.AboutController">
+   <effect>
+      <Lighting>
+         <bumpInput>
+            <Shadow />
+         </bumpInput>
+         <light>
+            <Light.Distant />
+         </light>
+      </Lighting>
+   </effect>
+   <children>
+      <Text fill="WHITE" layoutX="93.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mohammad Asifur Rahim">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="243.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Developed by:">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="343.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="180104118">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="343.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="180104109">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="87.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ayesha Afroze">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="back1" layoutX="496.0" layoutY="344.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="67.0" text="Back">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

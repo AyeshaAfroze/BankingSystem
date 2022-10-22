@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.AccnoController">
+   <effect>
+      <Lighting>
+         <bumpInput>
+            <Shadow />
+         </bumpInput>
+         <light>
+            <Light.Distant />
+         </light>
+      </Lighting>
+   </effect>
+   <children>
+      <TextField fx:id="accno" layoutX="187.0" layoutY="213.0" prefHeight="25.0" prefWidth="226.0" />
+      <Text fill="WHITE" layoutX="176.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Account Number Is:">
+         <font>
+            <Font name="Bell MT Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="128.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Acccount Created Successfully">
+         <font>
+            <Font name="Bell MT Bold" size="27.0" />
+         </font>
+      </Text>
+      <Button fx:id="back1" layoutX="510.0" layoutY="348.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="67.0" text="Back">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
